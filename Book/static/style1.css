@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+body { margin:0; padding:0; width:100%; color:#959595;
+font:normal 12px/1.8em Arial, Helvetica, sans-serif;
+background:#F4A460}
+table{height:800px}
+.test{height:100%}
+.heading{height:100px}
+
+img{vertical-align:text-top; float:left;}

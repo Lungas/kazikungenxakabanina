@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block styles%}
+	<link rel="stylesheet" href="/static/js/jquery-ui-1.8.17.custom/development-bundle/themes/ui-lightness/jquery.ui.all.css">
+	<link rel="stylesheet" href="/static/js/jquery-ui-1.8.17.custom/development-bundle/demos/demos.css">
+{% endblock%}
+{% block scripts%}
+	<script src="/static/js/jquery-ui-1.8.17.custom/development-bundle/jquery-1.7.1.js"></script>
+	<script src="/static/js/jquery-ui-1.8.17.custom/development-bundle/ui/jquery.ui.core.js"></script>
+	<script src="/static/js/jquery-ui-1.8.17.custom/development-bundle/ui/jquery.ui.widget.js"></script>
+	<script src="/static/js/jquery-ui-1.8.17.custom/development-bundle/ui/jquery.ui.datepicker.js"></script>
+	<script src="/static/js/event.js"></script>
+	
+{% endblock%}
+{% block home %}<li><a href="/" class="current">Home</a></li>{% endblock %}
+{% block content %}
+	<div class="row">
+	<div class="wrapper">
+	    <div class="grid_16">
+		<div class="box">
+		    <h2>Welcome</h2>
+		    <div class="wrapper">
+			<img src="/static/images/000.gif" alt="" class="img-indent">
+			<p>{% if user.is_authenticated %}
+				Welcome {{ user.username }}.
+				{% endif%}
+<b>Wiseman Gabavana</b> is the son of Simon and Nowezile Gabavana. Born in the former Transkei homeland now known
+			as the Eastern Cape at Tsomo in the rural village of Khuze at Xolobe. <p>He started his primary schooling at
+			Thembeni primary in Khuze village. He then moved to the Western Cape  for his high schooling in Masiyile Senior Secondary.</p>
+			In 2003 he enrolled for LLB at the University of the Western Cape, but the following year he changed to Business Administration.
+			In 2008 he graduated in Business Administration and the following year enrolled for the Higher Diploma in Education and completed it in 2010.
+			His interests include writing and reading.His first book is "Kazi kungenxa kabani na" (Whose fault is it)was published in 2009.
+			</p>
+		    </div>
+		</div>
+	   </div>
+	   <div class="grid_8">
+		<a href="#"><img src="/static/images/books.jpg" alt=""></a>
+	  </div>
+	</div>
+      </div>
+	<div class="row">
+      	    <div class="wrapper">
+		<div class="grid_16">
+		    <h3>On the book</h3>
+		    <h4>Book throws light on difficult matter</h4>
+		    <p>He seems to think that what the Nguni people call "Indlalifa" is entitled to whatever he or she has
+		    worked for, not what his or her parents have worked for. He argues: "Inkulu siyibona ngezenzo, hayi ngokufuna
+		    ilifa elingalisebenzelanga."<br />
+		    This drama-like book is dominated by dialogue between the players, is his first offering and it is said
+		    to be the best thing in Xhosa literature.<br /><b>City Vision, 12 November 2009 by Mattew M Mfubu</b></p>
+		    <p></p>
+		    <h4>Tackles Business of Writing</h4>
+		    <p>Gabavana finds it important to treat children equally in order to create a healthy family environment
+		    <br /><b>Storytelling - 12 On Campus November/Decemmber 2009 by LT</p>
+		</div>
+		<div class="grid_8">
+			<h3>Upcomming events({{event_count}})</h3>
+			<div class="demo">
+				<div id="datepicker"></div>
+			</div>
+		</div>
+	    </div>
+      </div>
+{% endblock%}
+{% block fhome %}<li><a href="/" class="current">Home</a></li>{% endblock %}

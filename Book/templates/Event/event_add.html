@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block styles%}
+	<link rel="stylesheet" href="/static/js/jquery-ui-1.8.17.custom/development-bundle/themes/ui-lightness/jquery.ui.all.css">
+	<link rel="stylesheet" href="/static/js/jquery-ui-1.8.17.custom/development-bundle/demos/demos.css">
+{% endblock%}
+{% block scripts%}
+	<script src="/static/js/jquery-ui-1.8.17.custom/development-bundle/jquery-1.7.1.js"></script>
+	<script src="/static/js/jquery-ui-1.8.17.custom/development-bundle/ui/jquery.ui.core.js"></script>
+	<script src="/static/js/jquery-ui-1.8.17.custom/development-bundle/ui/jquery.ui.widget.js"></script>
+	<script src="/static/js/jquery-ui-1.8.17.custom/development-bundle/ui/jquery.ui.datepicker.js"></script>
+	<script>
+	$(function() {
+		$( "#id_datepicker" ).datepicker();
+	});
+	</script>
+{% endblock%}
+{%block events %}
+    <li class="active"><a href="/events">Events</a></li>
+{% endblock %}
+{% block content %}
+<div>
+    <form action="" method="post">
+        <table class="eventform">
+            {{ form.as_table }}
+        </table>
+        <p><input type="submit" value="Submit"></p>
+    </form>
+</div>
+
+
+{% endblock %}

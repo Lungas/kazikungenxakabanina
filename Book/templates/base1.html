@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+            
+	    <meta property="og:title" content="" />
+	    <meta property="og:type" content="" />
+	    <meta property="og:url" content="" />
+	    <meta property="og:image" content="" />
+	    <meta property="og:site_name" content="Kazi Kungenxa Kabani na" />
+	    <link href="/static/style.css" rel="stylesheet" type="text/css" />
+	    <link rel="stylesheet" href="/static/js/jquery-ui-1.8.17.custom/development-bundle/themes/ui-lightness/jquery.ui.all.css">
+	    <script src="/static/js/jquery-ui-1.8.17.custom/development-bundle/jquery-1.7.1.js"></script>
+	    <script src="/static/js/jquery-ui-1.8.17.custom/development-bundle/ui/jquery.ui.core.js"></script>
+	    <script src="/static/js/jquery-ui-1.8.17.custom/development-bundle/ui/jquery.ui.widget.js"></script>
+	    <script src="/static/js/jquery-ui-1.8.17.custom/development-bundle/ui/jquery.ui.datepicker.js"></script>
+	    
+	    
+	    <link rel="stylesheet" href="/static/js/jquery-ui-1.8.17.custom/development-bundle/demos/demos.css">
+	   <script>
+		$(function() {
+		$( "#id_datepicker" ).datepicker();
+		});
+	</script>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+		      }(document, 'script', 'facebook-jssdk'));
+		</script>
+		<!-- Place this tag where you want the +1 button to render -->
+
+
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+		<table>
+                    <tr>
+                        <td colspan="3" id="heading"><h1>Kazi kungenxa kabani na <br><span class="by">by </span><br><span class="thename">Wiseman Gabavana</span></h1></td>
+                    </tr>
+                    
+                    <tr>
+                        <td id="menu">
+                            <div class="sidebarheading">Contents</div>
+				<ol>
+					{% block home %}
+				    <li><a href="/">Welcome</a>
+					
+				    </li>
+				    {% endblock %}
+				    {% block author %}<li><a href="/author">The author</li></a>{% endblock %}
+				    {% block blog %}<li><a href="/blog">Blog</a></li>{% endblock %}
+				    {% block events %}<li><a href="/events">Events</a></li>{% endblock %}
+				    {% block contact %}<li><a href="/contact">Contact</a></li>{% endblock %}
+				    {% block order %}<li><a href="/order">Get the book</a></li>{% endblock %}
+				    <li class="social-links">
+					 
+						<img src="/static/images/social/facebook_16.png" alt="" />
+						<img src="/static/images/social/twitter_16.png" alt="" />
+						
+					
+				    </li>
+				</ol>
+				
+                        </td>
+                        <td id="content" valign="top">
+                            
+                                {% block content %}Content{% endblock %}    
+			    
+                        </td>
+			{% block coverandlikes%}
+                        <td class="image">
+                            
+			</td>
+			{% endblock%}
+                    </tr>
+                    <tr>
+                        <td colspan="3" id="footer" align="center" valign="middle">&copy; 2012: <a href="/author">Wiseman Gabavana |</a>
+			<span class="foot">Website: <a href="">Lunga Baliwe |</a>
+			<span class="foot">Proof read: <a href="">Viwe Sigenu</a>
+			</td>
+                    </tr>
+                </table>
+	</body>
+</html>

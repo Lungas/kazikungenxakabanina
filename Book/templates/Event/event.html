@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block events%}
+    <li><a href="/events"  class="current">Events</a></li>
+{% endblock %}
+
+{% block content %}
+    
+    
+    <div class="row">
+	<div class="wrapper">
+	    <div class="grid_16">
+		<div class="blogbox">
+		    <div class="wrapper">
+                        {% if not object_list%}
+                            <h3 class="blog">No Events</h3>
+                        {% endif%}
+    {% for object in object_list%}
+        <h3 class="blog">{{ object.name }}</h3>
+                            
+        
+    
+        <p>
+        <b>Date : {{ object.datepicker }}<br />
+        Time : {{ object.start_time }} until {{ object.end_time }}<br>
+        Details: {{ object.event_details }}
+        </b><br>
+        {% for photo in object.photos_set.all%}
+            <img src="{{MEDIA_URL}}{{photo.photo_name}}" alt="" height="40" width="40">
+                
+        {% endfor%}
+        
+        
+    
+                            <div class="h3withoutlinks"></div>
+    
+{% endfor%}
+			
+		    </div>
+		</div>
+	   </div>
+	   <div class="grid_8">
+		<a href="#"><img src="/static/images/books.jpg" alt=""></a>
+	  </div>
+	</div>
+      </div> 
+    
+{% endblock %}
+{% block fevents%}
+    <li><a href="/events"  class="current">Events</a></li>
+{% endblock %}

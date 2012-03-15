@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% comment%}{% load comments %}{% endcomment%}
+
+{% block blog%}
+    <li class="active"><a href="/blog" class="current">Blog</a></li>
+{% endblock %}
+    
+{% block content %}
+    
+   
+    
+<div class="row">
+    <div class="wrapper">
+        <div class="grid_16">
+            <div class="blogbox">
+                <div class="img-box">
+                    <h3 class="blog">{{ blog.title }}</h3>
+                    Posted on {{ blog.captured_date }} <br>
+                    {{blog.comments_set.count}}  comment{{ blog.comments_set.count|pluralize }}
+                    <p>{{ blog.text }}</p>
+                    {% for comment in comments_list%}
+                    <p><b>{{ comment.name }} says:</b> <br>{{ comment.captured_date }}</p>
+                    <p>{{ comment.comment }}</p>
+                    {% endfor%}
+                    <form action="/blog/{{blog.title}}/comments/" method="post">
+                        <table>
+                            {{ comment_form.as_table }}
+                        </table>
+                        <p><input type="submit" value="Submit"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="grid_8">
+            <img src="/static/images/bbbd.jpg" alt="">
+            <div class="row"></div>
+            <div class="inside">
+          <!--<h3></h3>--> 
+        </div>
+      </div>
+    </div>
+</div>    
+{% endblock%}
+
+{% block fblog%}
+    <li><a href="/blog"  class="current">Blog</a></li>
+{% endblock %}

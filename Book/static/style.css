@@ -1,0 +1,337 @@
+@charset "UTF-8";
+/* CSS Document */
+/*1px solid #B56426
+-webkit-linear-gradient(top,#FCC239,#FD8830 87%,#FE7D1C)
+-moz-linear-gradient(top,#FCC239,#FD8830 87%,#FE7D1C)*/
+div {
+	margin:0;
+	padding:0;
+}
+
+body {
+	color:#000;
+	background-color:#FFFFFF;
+	font-family:Helvetica, Verdana, Arial, sans-serif;
+	font-size:small;
+	margin:0;
+	padding:0;
+}
+.test{width:20px}
+#heading {
+	color:white;
+	height:150px;
+	text-align:center;
+        background:url(images/bg-header.png) repeat-x 0 -38px
+}
+
+#heading h1 {
+	visibility:visible;
+	margin:0;
+	padding:10px;
+}
+a {
+	color:#000;
+        font-weight:bold;
+        text-decoration:none;
+}
+.testcol{color:#901A24}
+
+img {
+	/*float:right;
+	padding-right:1em;
+	padding-left:1em;
+	padding:1px
+	*/
+}
+
+/*a:hover {
+	color:#901A24;
+	/*text-decoration:none;
+}*/
+
+ul {
+	list-style:square;
+}
+
+ol li {
+	padding-bottom:1em;
+}
+
+label {
+	font-style:italic;
+}
+table{empty-cells:show; width:100%; border-collapse:collapse; border:0; border-spacing:0;}
+
+
+#wrapper {
+	/*clear:both;*/
+	margin-top:0;
+        
+}
+p img{padding-left:25%;}
+h1 {font-size:400%}
+.by{color:#FFFFFF; font-size:50%}
+.thename{color:#FFFFFF;
+            font-size:50%}
+#menu {
+        background:#FCC239;/*non gradient browsere*/
+        border:1px solid #B56426;
+        /*position:absolute;
+        top:auto;
+	float:left;*/
+	width:190px;
+	filter:alpha(opacity=90);
+	-moz-opacity:0.9;
+	-khtml-opacity: 0.9;
+	opacity: 0.9;
+        background:-webkit-linear-gradient(top,#FCC239,#FD8830 87%,#FE7D1C);
+        background:-moz-linear-gradient(top,#FCC239,#FD8830 87%,#FE7D1C);'
+        background:linear-gradient(top,#FCC239,#FD8830 87%,#FE7D1C);
+        background:-ms-linear-gradient(top,#FCC239,#FD8830 87%,#FE7D1C);
+        background:-o-linear-gradient(top,#FCC239,#FD8830 87%,#FE7D1C);
+        
+        
+        vertical-align:text-top;
+}
+.sidebarheading {font-weight:bold;
+                text-align:left;
+                background:#FD8830;/*non gradient browsere*/
+                background:-webkit-linear-gradient(top,#FCC239,#FD8830 87%,#FE7D1C);
+                background:-moz-linear-gradient(top,#FCC239,#FD8830 87%,#FE7D1C);
+                background:linear-gradient(top,#FCC239,#FD8830 87%,#FE7D1C);
+                background:-ms-linear-gradient(top,#FCC239,#FD8830 87%,#FE7D1C);
+                background:-o-linear-gradient(top,#FCC239,#FD8830 87%,#FE7D1C);
+                
+                border-bottom:1px solid #B56426;
+                font-size:20px;
+                width:190px;
+                }
+.busi{'color':'#EB8F00'}
+#content {
+        width:100%;
+        /*position:absolute;
+        left:210px;
+        background:-webkit-linear-gradient(top,#fff,#FFFFF0 87%,#FFFAFA);
+        background:-moz-linear-gradient(top,#FFFAFA,#FFFFF0 87%,#fff);*/
+	background-color:#FFF;
+        /*border:thin solid #FFF;*/
+	/*margin-left:0px;
+	margin-right:1em;
+	margin-bottom:1em;*/
+	/*padding-right:1em;*/
+	padding:1em;
+	/*filter:alpha(opacity=90);
+	-moz-opacity:0.9;
+	-khtml-opacity: 0.9;
+	opacity: 0.9;*/
+}
+
+/*.welcome {
+	min-height:410px;
+}*/
+.image{background-color:#FFF; padding:1em; width:28%;border-right:1px solid #B56426;}
+.vertical{position:absolute;top:20px}
+span
+{
+
+    filter: alpha(opacity:100);
+
+}
+#information {
+	font-size:x-small;
+}
+
+.center {
+	text-align:center;
+}
+
+.half-transparent {
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+
+.quarter-transparent {
+	filter:alpha(opacity=75);
+	-moz-opacity:0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+}
+
+#chronology {
+	
+}
+
+/*#chronology td, th {
+	margin:2px;
+	padding:4px;
+	background-color:#901A24;
+}*/
+
+
+/*
+table a:hover {
+	color:white;
+	text-decoration:none;
+}
+
+td, th {
+	margin:2px;
+	padding:2px;
+	background-color:#901A24;
+	vertical-align:top;
+}
+*/
+#legend ul {
+	list-style:none;
+}
+
+#legend li {
+	list-style:none;
+	display:inline;
+}
+
+#legend li  {
+	padding-bottom:1em;
+}
+
+#webnotes_table {
+	width:25%;
+}
+
+#webnotes_table td {
+	background-color:#141332;
+}
+
+.tabbed {
+	text-indent:3em;
+	margin-top:-1em;
+}
+
+.untabbed {
+	text-indent:0em;
+	margin-top:-1em;
+}
+
+.indent {
+	margin-left:3em;
+	margin-top:-1em;
+}
+#footer {/*float:left;
+        position:absolute;
+        top:627px;*/
+            width:100%;
+                       
+           
+            color:#777;
+            background:#111;
+            height:25px;
+            text-align:center;
+            /*background:url(images/bg-footer.png) repeat-x*/}
+#footer .wrap{
+                width:100%;
+                margin:0 auto;
+                /*padding:0 0 15px;*/
+                background:#111
+}
+#foot{padding: 25px 0px 0px 200px; width:50% color:#fff}
+#footer a{color:#fff}
+.images{position:absolute; top:2px;}
+li.active a {color:#fff}
+img{vertical-align:middle}
+
+
+.news{color:#fff}
+
+ul.errorlist {
+margin: 0;
+padding: 0;
+}
+.errorlist li {
+background-color: #FD8830;
+color: white;
+display: block;
+font-size: 10px;
+margin: 0 0 3px;
+padding: 4px 5px;
+}
+
+.blogtable{width:150px; height:150px}
+
+.bloglist{margin-bottom:20px; border-bottom:1px solid #B56426;width:75%}
+.blogauthor{color:#FD8830}/*#FCC239,#FD8830 87%,#FE7D1C*/
+.orderstyle{position:absolute; top:170px; right:120px}
+.orderform{height:60px;margin:0; padding:0; width:100px}
+.eventform{height:100px;margin:0; padding:0; width:50%}
+social-links li a {border-bottom:none !important; float:left; padding:0 3px 0 0 !important; display:inline !important; overflow:hidden;}
+/*.social-links img {float:left !important;}
+.social-links  li{list-style:none; list-style-position:outside; border:none; float:left;
+                text-indent:0em;
+                }
+*/
+td{text-align:left}
+td#menu{height:500px; width:190px}
+.event_name{color:#FD8830}
+.eventlist{margin-bottom:20px; border-bottom:1px solid #B56426; width:75%}
+.month_events{}
+.orderheadings{}
+.homeheading{}
+.homewelcome{}
+div.homewelcome{font-size:18px;
+            background:#F8F8FF;
+            color:#901A24;
+            font-weight:bolder; 
+            width:100%;
+            font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+            padding-left:2px;
+            margin-bottom:5px}
+div.homeheading{background:#F8F8FF;
+                font-weight:bolder;
+                color:#901A24;
+                border-top:1px solid #F5F5F5;
+                width:100%;
+                font-size:14px;
+                font-family:"lucida grande",tahoma,verdana,arial,sans-serif;    
+}
+div.orderheadings{
+                background:#FCC239;/*non gradient browsere*/
+                background:-webkit-linear-gradient(top,#F2F3F4,#FD8830 87%,#FCC239);
+                background:-moz-linear-gradient(top,#F2F3F4,#FD8830 87%,#FE7D1C);
+                background:linear-gradient(top,#FCC239,#FD8830 87%,#FE7D1C);
+                background:-ms-linear-gradient(top,#FCC239,#FD8830 87%,#FE7D1C);
+                background:-o-linear-gradient(top,#FCC239,#FD8830 87%,#FE7D1C);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FCC239', endColorstr='#FE7D1C'); /* for IE */
+                zoom:1;
+                filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#444444', EndColorStr='#999999'); /* IE6,IE7 */
+                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FCC239', EndColorStr='#FE7D1C')"; /* IE8 */
+                font-weight:bolder; 
+                border-top:1px solid #B56426;
+                width:50%;
+                font-size:14px;
+                font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+                padding-top:5px;
+                padding-bottom:5px;
+                padding-left:2px;
+                margin-bottom:5px}
+
+div.month_events{
+                background:#FCC239;/*non gradient browsere*/
+                background:-webkit-linear-gradient(top,#F2F3F4,#FD8830 87%,#FCC239);
+                background:-moz-linear-gradient(top,#F2F3F4,#FD8830 87%,#FE7D1C);
+                font-weight:bolder; 
+                border-top:1px solid #B56426;
+                width:75%;
+                font-size:14px;
+                font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+                padding-top:5px;
+                padding-bottom:5px;
+                padding-left:2px}
+
+a:hover{color:#901A24;}
+/*.contact{background:red url(/static/images/telephone1.jpg);filter:alpha(opacity=0.5);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;}*/
+.contactdetails{height:50px;margin:0; padding:0;}
+h2{-webkit-margin-after: 0;}

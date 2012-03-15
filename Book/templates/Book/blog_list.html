@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block blog%}
+    <li><a href="/blog" class="current">Blog</a></li>
+{% endblock %}
+
+{% block content %}
+   
+    
+<div class="row"> 
+	<div class="wrapper">
+	    <div class="grid_16">
+		<div class="box">
+		    <div class="wrapper">
+                        {% if not object_list%}
+                            <h3 class="blog">No Blogs</h3>
+                        {% endif%}
+			{% for object in object_list%}
+    
+                            <h3 class="blog"><a href="/blog/{{ object.title|slugify}} " class="blog">{{ object.title }}</a></h3>
+                            <span>Posted on {{ object.captured_date }} <br></span>
+                            <p class="description">{{object.text|truncatewords:"35"}}
+                                {% ifequal object.text|truncatewords:"35"|wordcount 36%}
+                                    <br /><a href="/blog/{{ object.title|slugify}}"> read more</a>
+                                    {% endifequal%}
+                            
+                            </p>
+                            <p class="details"><a href="/blog/{{ object.title|slugify}}">  {{object.comments_set.count}}  comment{{ object.comments_set.count|pluralize }}
+                            <div class="h3withoutlinks"></div>
+    
+{% endfor%}
+			
+		    </div>
+		</div>
+	   </div>
+	   <div class="grid_8">
+		<a href="#"><img src="/static/images/books.jpg" alt=""></a>
+	  </div>
+	</div>
+      </div>        
+{% endblock %}
+{% block fblog%}
+    <li><a href="/blog" class="current">Blog</a></li>
+{% endblock %}

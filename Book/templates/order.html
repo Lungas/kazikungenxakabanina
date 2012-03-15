@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{%block order %}
+    <li><a href="/order" class="current">Purchase</a></li>
+{% endblock %}
+{% block content %}
+
+<div class="row">
+      	<div class="wrapper">
+        	<div class="grid_16">
+          	<div class="box">
+           	  <h2>Purchse</h2>
+              <dl class="list3">
+              	<div><strong>You can deposite it via: </strong></div>
+                <img src="/static/images/capitec_logo.gif" alt="image"><br>
+Bank: Capitec<br>
+Account number: 120 514 1527
+<dt>The price of the book is R 75.00<br>
+  <br>
+</dt>
+<form action="" method="post">
+<table class="orderform">
+{{ form.as_table }}
+</table>
+<p><input type="submit" value="Submit"></p>
+</form>
+<dt>&nbsp;</dt>
+                <p><strong>Direct Purchase </strong></p>
+                <dt>&nbsp;</dt>
+                <p>7 Montana <br>
+                  Dawid Avenue<br>
+                  Cape Town <br>
+                  7490 </p>
+                <dt>&nbsp;</dt>
+              </dl>
+              <dl class="list3">
+                <p>&nbsp;</p>
+              </dl>
+          	</div></div>
+        	<div class="grid_8">
+            <div class="inside">
+              <div class="inside">
+                <h3><img src="/static/images/afri_33.gif" width="183" height="614" alt="afri_2"></h3>
+                <dl class="list2">
+                	<dt>&nbsp;</dt> 
+                  <dt>&nbsp;</dt>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+{% endblock %}
+{%block forder %}
+    <li><a href="/order" class="current">Purchase</a></li>
+{% endblock %}

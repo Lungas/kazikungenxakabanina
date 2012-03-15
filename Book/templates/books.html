@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block styles%}
+	<link rel="stylesheet" href="/static/js/jquery-ui-1.8.17.custom/development-bundle/themes/ui-lightness/jquery.ui.all.css">
+	<link rel="stylesheet" href="/static/js/jquery-ui-1.8.17.custom/development-bundle/demos/demos.css">
+{% endblock%}
+{% block scripts%}
+	<script src="/static/js/jquery-ui-1.8.17.custom/development-bundle/jquery-1.7.1.js"></script>
+	<script src="/static/js/jquery-ui-1.8.17.custom/development-bundle/ui/jquery.ui.core.js"></script>
+	<script src="/static/js/jquery-ui-1.8.17.custom/development-bundle/ui/jquery.ui.widget.js"></script>
+	<script src="/static/js/jquery-ui-1.8.17.custom/development-bundle/ui/jquery.ui.datepicker.js"></script>
+	<script>
+	$(function() {
+		$( "#datepicker" ).datepicker();
+	});
+	</script>
+{% endblock%}
+{% block books %}<li><a href="/books" class="current">Books</a></li>{% endblock %}
+{% block content %}
+    <div class="row">
+      	<div class="wrapper">
+        	<div class="grid_16">
+          	<div class="box">
+            	<h2>The books</h2>
+           	  <div class="img-box">
+              	<img src="/static/images/WG2.jpg" alt="">
+                <h4 class="alt"><strong>KAZI KUNGENXA KABANI NA</strong></h4>
+                <p>The book is about the estate, the father of this family wants to share   among his children everything equally when it comes to his will. Then,   the first born refuses his fathers wishes saying that the estate is his   hereditary rights. Eventually, the first born son kills his father,   because he wanted everything to be given to him. <br>
+                  To the Xhosas the general view is that the estate must be given to the first son. <br>
+This book suggests that the estate must be shared equally, reason for   that we must take one thing into account, a child is a gift from God. If   we continue to share the estate unequally, there will always a be   conflict.</p>
+                <h4>Price: R79</h4>
+</div>
+              
+              
+          	</div>
+          </div>
+        	<div class="grid_8">
+          	<div class="row"></div>
+            <div class="inside">
+              <h3>Upcomming events({{event_count}})</h3>
+			<div class="demo">
+				<div id="datepicker"></div>
+			</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+{% endblock%}
+{% block fbooks %}<li><a href="/books" class="current">Books</a></li>{% endblock %}

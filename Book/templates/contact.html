@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block scripts%}
+	
+        <script type="text/javascript" src="/static/js/jscripts/tiny_mce/tiny_mce.js"></script>
+  {% endblock%}
+{%block contact %}
+    <li><a href="/contact"  class="current">Contact</a></li>
+{% endblock %}
+{% block content %}
+<div class="row">
+      	<div class="wrapper">
+      	  <div class="grid_13">
+          	<div class="suffix_1">
+            	<h3>Contact Form</h3>
+                {% if message%}
+                    <div>{{message}}</div>
+                    {% else%}
+                        <form action="." method="post">
+                    <table class="orderform">
+                        {{ contact_form.as_table }}
+                    </table>
+                    <p><input type="submit" value="Submit"></p>
+                </form>
+                {% endif%}
+                
+                
+                
+              <p>&nbsp;</p>
+            </div>
+          </div>
+      	  <div class="grid_11">
+          	<h3>Contact Information</h3>
+            <p><strong>Cape Town </strong> <br>
+              7 Montana <br>
+Dawid Avenue<br>
+Cape Town <br>
+7490</p>
+            <p>Postal  Address:P.O. Box 5022<br>
+              Cape Town<br>
+              8000</p>
+            <p>Telephone  No(021) 462 7900<br>
+              Cell  No.:(021) 462 7100</p>
+    Email:wg@wisemangabavana.co.za</div>
+      	</div>
+      </div>
+{% endblock %}
+{%block fcontact %}
+    <li><a href="/contact"  class="current">Contact</a></li>
+{% endblock %}

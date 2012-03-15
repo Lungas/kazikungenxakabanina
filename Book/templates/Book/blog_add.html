@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block blog%}
+    <li class="active"><a href="/blog">Blog</a></li>
+{% endblock %}
+{% block content %}
+<form action="" method="post">
+<table class="blogtable">
+{{ form.as_table }}
+</table>
+<p><input type="submit" value="Submit"></p>
+</form>
+
+
+<!--
+<form action="." method="post">
+<table>
+{{ form.as_table }}
+</table>
+<p><input type="submit" value="Submit"></p>
+</form>-->
+{% endblock%}
+
+{% block coverandlikes%}
+    <td class="image" valign="top">
+</td>
+    
+
+{% endblock %}
+
